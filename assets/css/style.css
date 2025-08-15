@@ -1,0 +1,116 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.section-intro{
+    
+    height: 100vh;
+    background: url(/assets/img/fundo-eletricista.jpg);
+    background-size: cover;
+}
+
+
+#logo img{
+    width: 70px;
+}
+
+/*header*/
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    
+}
+
+.menu-nav ul{
+    display: flex;
+    
+}
+
+.menu-nav ul li{
+    margin-left: 20px;
+    color: rgb(237, 237, 237);
+    transition: color 0.5s ease;
+    text-decoration: none;
+    
+}
+
+.menu-nav ul li:hover{
+    color: #ffbb01;
+}
+
+
+/*main*/
+main{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+.main-text{
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    color: aliceblue;
+    gap: 20px;
+    
+    
+    
+
+}
+
+.div-livre{
+    width: 40%;
+}
+
+
+.main-text h1{
+
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    width: 60%;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+.main-text h2{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 85%;
+    
+   
+}
+
+.main-text h3{
+    font-size: 20px;
+    font-weight: 300;
+    width: 70%;
+    letter-spacing: 1px;
+    margin-bottom: 10px
+}
+
+strong{
+    font-weight: 600;
+}
+
+
+
