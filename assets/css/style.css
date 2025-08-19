@@ -22,6 +22,24 @@
     width: 70px;
 }
 
+#logo h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    width: 60%;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: aliceblue;
+
+}
+
+#logo
+{
+    display: flex;
+    align-items: center;
+}
+
+
 /*header*/
 .menu{
     display: flex;
@@ -92,7 +110,7 @@ main{
 
 
 .main-text h2{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 1.2;
     width: 80%;
@@ -113,5 +131,66 @@ strong{
     font-weight: 600;
 }
 
+/*button*/
+.button-87 {
+  padding: 15px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: #ffbb01;
+  background-image: linear-gradient(45deg, #ffcb2f 0%, #F09819  51%, #ffd22f  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-radius: 12px;
+}
 
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+}
 
+/*google*/
+
+.google-stars{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.google{
+    display: flex;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.google-stars img{
+    margin-bottom: 2px;
+}
+
+.google-stars p{
+    font-weight: 300;
+    color: antiquewhite;
+}
+
+#atendimentos{
+    font-weight: 600;
+}
