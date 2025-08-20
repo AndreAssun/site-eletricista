@@ -77,6 +77,18 @@ main{
     width: 80%;
     
 }
+.frase-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.risco {
+  position: absolute;
+  bottom: -115px; /* posiciona acima da palavra */
+  left: 50%;    /* centraliza horizontalmente */
+  transform: translateX(-50%) translateY(-10px); /* ajusta o espaçamento */
+  width: 280px; /* ajuste conforme o tamanho desejado */
+}
 
 .main-text{
     height: 80vh;
@@ -194,3 +206,26 @@ strong{
 #atendimentos{
     font-weight: 600;
 }
+
+/*section-two*/
+
+.fundo-two{
+    background: url(/assets/img/fundo.jpg) ;
+}
+
+.section-two{
+    margin: 0 auto;
+    width: 80%;
+    background-color: aliceblue;
+    background-size: cover;
+    display: flex;
+    color: rgb(25, 127, 216);
+    border-radius: 30px;
+    padding: 80px;
+}
+
+.image-whats img{
+    width: 350px;
+    border-radius: 50px;
+}
+
