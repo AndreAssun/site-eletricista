@@ -222,9 +222,30 @@ strong{
     display: flex;
     color:#01509B;
     border-radius: 30px;
-    padding: 80px;
+    padding: 50px;
     align-items: center;
     
+}
+
+.servicos-prestados{
+    display: flex;
+    padding-bottom: 50px;
+    width: 80%;
+    gap: 50px;
+    
+    
+}
+
+.servicos-prestados p{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.servicos-prestados strong{
+    color: #ffbb01;
+    font-size: 60px;
+    padding-right: 15px ;
 }
 
 
@@ -333,6 +354,89 @@ strong{
   0% { transform: translateY(0); }
   50% { transform: translateY(-15px); }
   100% { transform: translateY(0); }
+}
+
+
+/*Serviços*/
+
+.section-servicos{
+    background-color: #01509B;
+    color: aliceblue;
+    
+}
+
+.servicos{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+    
+    
+}
+.servicos h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 5px;
+    
+}
+
+.servicos h1 img{
+     width: 20px;
+}
+
+.servicos h2{
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.servicos h3{
+    padding-bottom: 70px;
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+.blocos-servico{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bloco{
+    display: flex;
+    gap: 10px;
+    background-color: aliceblue;
+    color: rgb(51, 51, 51);
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.bloco h4{
+    font-weight: 500;
+}
+
+.bloco-explicacao{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    background-color: aliceblue;
+    color: rgb(51, 51, 51);
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 230px;
+
 }
 
 
