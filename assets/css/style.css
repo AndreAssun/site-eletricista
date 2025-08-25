@@ -192,6 +192,7 @@ strong{
     display: flex;
     gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
 }
 
 .google-stars img{
@@ -219,13 +220,119 @@ strong{
     background-color: aliceblue;
     background-size: cover;
     display: flex;
-    color: rgb(25, 127, 216);
+    color:#01509B;
     border-radius: 30px;
     padding: 80px;
+    align-items: center;
+    
 }
 
-.image-whats img{
-    width: 350px;
-    border-radius: 50px;
+
+.main-text-2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 80%;
+    
+
 }
+
+.main-text-3{
+    font-size: 20px;
+    font-weight: 300;
+    width: 70%;
+    letter-spacing: 1px;
+    margin-top: 20px
+
+
+}
+
+.area{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+
+.area-icones{
+    display: flex;
+    align-items: center;
+    margin-top:2%;
+}
+
+.text-icon{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.icon-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icon-eletricista{
+    margin-right: 10px;
+}
+
+.image-eletrica img{
+    width: 300px;
+}
+.image-eletrica .esfera-flutua img{
+    width: 150px;
+}
+
+.image-eletrica {
+  position: relative;
+  width: 300px; /* ajuste conforme o tamanho da imagem */
+  margin: 0 auto;
+}
+
+.celular {
+  width: 100%;
+  display: block;
+}
+
+.bola {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+/* Bola 01 - acima da imagem */
+.bola01 {
+  top: -20px;
+  animation-delay: 0s;
+  left: 240px;
+}
+
+/* Bola 02 - centro da imagem */
+.bola02 {
+  top: 70%;
+  transform: translate(-50%, -50%);
+  animation-delay: 1s;
+  left: 240px;
+}
+
+/* Bola 03 - abaixo da imagem */
+.bola03 {
+  bottom: 70px;
+  left: -80px;
+  animation-delay: 2s;
+}
+
+.image-eletrica .bola{
+    width: 130px;
+}
+
+/* Animação flutuante */
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
 
