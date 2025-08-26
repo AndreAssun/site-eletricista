@@ -225,13 +225,14 @@ strong{
     padding: 50px;
     align-items: center;
     
+    
 }
 
 .servicos-prestados{
     display: flex;
     padding-bottom: 50px;
     width: 80%;
-    gap: 50px;
+    gap: 10px;
     
     
 }
@@ -244,8 +245,8 @@ strong{
 
 .servicos-prestados strong{
     color: #ffbb01;
-    font-size: 60px;
-    padding-right: 15px ;
+    font-size: 70px;
+    padding-right: 10px ;
 }
 
 
@@ -365,11 +366,16 @@ strong{
     
 }
 
+.servicos h2 strong{
+    color: #ffbb01;
+}
+
 .servicos{
     width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-top: 150px;
+    
     
     
 }
@@ -408,6 +414,7 @@ strong{
     margin: 0 auto;
     justify-content: center;
     gap: 10px;
+    padding-bottom: 150px;
 }
 
 .bloco{
@@ -418,6 +425,8 @@ strong{
     width: 400px;
     padding: 10px;
     border-radius: 10px;
+    align-items: center;
+    
     
 }
 
@@ -434,9 +443,157 @@ strong{
     width: 400px;
     padding: 10px;
     border-radius: 10px;
-    padding: 20px;
-    height: 230px;
+    height: 150px;
+    font-weight: 500;
 
 }
 
+.bloco img{
+    width: 30px;
+}
+
+/*sobre mim*/
+
+.sobre-mim{
+    background-color: #01509B;
+    
+}
+
+.div-mim{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    gap: 60px;
+    
+}
+
+.bloco-informacao{
+    display: flex;
+    background-color: transparent;
+    background-image: linear-gradient(154deg, #7f9cb8 0%, #e0e3e7 100%);
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    border-radius: 30px;
+    
+}
+
+#logo-perfil{
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+    
+   
+}
+
+.text-box{
+    display: flex;
+    align-items: center;
+    
+}
+
+.text-box2{
+    margin-left: 20px;
+    
+}
+
+.text-box2 p{
+    color: #e0e3e7;
+    letter-spacing: 4px;
+
+}
+
+
+
+
+.text-box h2{
+    font-family: "Helvetica", Sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+}
+
+#logo-info{
+    background-color: rgb(255, 255, 255);
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+}
+
+.foto-profissional{
+    position: relative;
+}
+
+#foto-perfil{
+    border-radius: 30px;
+    width: 500px;
+}
+
+.sobre-mim-explicacao{
+    max-width: 60%;
+}
+
+
+.sobre-mim-explicacao h1{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sobre-mim-explicacao img{
+    width: 20px;
+    
+}
+
+.sobre-mim-explicacao h2{
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: normal;
+    gap: 5px;
+    color: aliceblue;
+
+}
+
+.sobre-mim-explicacao h3{
+    font-family: "Raleway", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: aliceblue;
+    padding-bottom: 40px;
+}
+
+.sobre-mim-explicacao h4{
+    font-family: "Raleway", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: aliceblue;
+    padding-bottom: 40px;
+}
+
+.bloco-formacao{
+    display: flex;
+    padding: 13px !important;
+    background-image: linear-gradient(154deg, #7f9cb8 0%, #e0e3e7 100%);
+    border-radius: 12px;
+    gap: 10px;
+    font-weight: 700;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+    width: 90%;
+}
 
