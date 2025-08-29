@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Meta tags essenciais para configuração do documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eletricista</title>
+    <title>EletroNext</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+	<script>
+		ScrollReveal({ duration: 1000 })
+	</script>
+    
+
+    <!-- Folhas de estilo -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/midia.css" />
+    
+    <!-- Fontes do Google -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    
+    <!-- Ícones Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+  
   <body>
+    <!-- Seção de introdução/hero section -->
     <section class="section-intro">
       <header class="header" id="header">
         <div class="menu">
-          <div id="logo">
-            <a href="index.html"><img src="/assets/img/logo.png" alt="" /></a>
-            <h1>EletroNext</h1>
-          </div>
-          <div class="menu-nav">
-            <nav>
-              <ul>
-                <a href=""><li>Sobre mim</li></a>
-                <a href=""><li>Serviço</li></a>
-                <a href=""><li>Depoimentos</li></a>
-                <a href=""><li>Tratamento</li></a>
-              </ul>
-            </nav>
-          </div>
+          <h1 id="logo">
+            <a href="index.html">
+              <img
+                src="assets/img/logo.png"
+                alt="Logo-Fecan-Engenharia"
+                class="logo"
+              />
+              EletroNext
+            </a>
+          </h1>
+          
+          <!-- Menu de navegação -->
+          <nav class="menu-nav" id="nav">
+            <button
+              id="btn-mobile"
+              aria-label="Abrir Maenu"
+              aria-haspopup="true"
+              aria-controls="menu"
+              aria-expanded="false"
+            >
+              Menu
+              <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#serviços">Serviços</a></li>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <main>
-        <div class="main-text">
+      
+      <!-- Conteúdo principal da seção inicial -->
+      <main id="home">
+        <div class="main-text headline">
           <h2>
             Serviços elétricos com
             <span class="frase-wrapper">
@@ -53,10 +88,14 @@
             <strong>energia solar</strong>, promovendo eficiência e segurança
             para sua casa ou empresa.
           </h3>
+          
+          <!-- Botão de chamada para ação (WhatsApp) -->
           <button class="button-87" role="button">
             Agende uma visita
             <i class="fa fa-whatsapp" style="font-size: 36px"></i>
           </button>
+          
+          <!-- Informações de avaliação do Google -->
           <div class="google">
             <div class="google-image">
               <img src="/assets/img/FotoPessoas.webp" alt="" />
@@ -75,367 +114,466 @@
       </main>
     </section>
 
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serviços Elétricos</title>
-  
-</head>
-<body>
-
-  <section class="fundo-two">
-    <div class="section-two-intro">
-      <div class="section-two">
-        <div>
-          <div class="servicos-prestados"> 
-            <p><strong id="num-servicos">0</strong>mil serviços prestados</p>
-            <p><strong id="num-estados">0</strong>presente estados</p>
-            <p><strong id="num-clientes">0</strong>clientes mensais</p>
-          </div>
-
-          <h2 class="main-text-2">
-            Acompanhamento, <br>
-            suporte e revisão constante.
-          </h2>
-
-          <h3 class="main-text-3">
-            A maioria dos acidentes elétricos em casa acontece por falta de orientação ou manutenção — <strong>e não é culpa do cliente</strong>, mas sim falta de suporte. Meu trabalho não termina com o último parafuso: eu explico, acompanho e sigo disponível para dúvidas. Porque eletricidade não é só técnica — <strong>é confiança</strong>.
-          </h3>
-
-          <div class="area">
-            <div class="area-icones">
-              <img class="icon-eletricista" src="/assets/img/icons8-electric-64.png" alt="" />
-              <div>
-                <h3 class="icon-text">Atendimento com atenção personalizada</h3>
-                <p class="text-icon">Nosso compromisso é entregar soluções elétricas com precisão</p>
-              </div>
+    <!-- Segunda seção: Estatísticas e diferenciais -->
+    <section class="fundo-two  ">
+      <div class="section-two-intro ">
+        <div class="section-two" id="serviços">
+          <div class="headline">
+            <!-- Estatísticas da empresa -->
+            <div class="servicos-prestados ">
+              <p><strong id="num-servicos">0</strong>mil serviços prestados</p>
+              <p><strong id="num-estados">0</strong>presente estados</p>
+              <p><strong id="num-clientes">0</strong>clientes mensais</p>
             </div>
 
-            <div class="area-icones">
-              <img class="icon-eletricista" src="/assets/img/icons8-construction-64.png" alt="" />
-              <div>
-                <h3 class="icon-text">Cuidado técnico</h3>
-                <p class="text-icon">Cada serviço é realizado com cuidado técnico e atenção personalizada</p>
+            <h2 class="main-text-2">
+              Acompanhamento, <br />
+              suporte e revisão constante.
+            </h2>
+
+            <h3 class="main-text-3">
+              A maioria dos acidentes elétricos em casa acontece por falta de
+              orientação ou manutenção —
+              <strong>e não é culpa do cliente</strong>, mas sim falta de
+              suporte. Meu trabalho não termina com o último parafuso: eu
+              explico, acompanho e sigo disponível para dúvidas. Porque
+              eletricidade não é só técnica — <strong>é confiança</strong>.
+            </h3>
+
+            <!-- Diferenciais da empresa -->
+            <div class="area">
+              <div class="area-icones">
+                <img
+                  class="icon-eletricista"
+                  src="/assets/img/icons8-electric-64.png"
+                  alt=""
+                />
+                <div>
+                  <h3 class="icon-text">
+                    Atendimento com atenção personalizada
+                  </h3>
+                  <p class="text-icon">
+                    Nosso compromisso é entregar soluções elétricas com precisão
+                  </p>
+                </div>
+              </div>
+
+              <div class="area-icones">
+                <img
+                  class="icon-eletricista"
+                  src="/assets/img/icons8-construction-64.png"
+                  alt=""
+                />
+                <div>
+                  <h3 class="icon-text">Cuidado técnico</h3>
+                  <p class="text-icon">
+                    Cada serviço é realizado com cuidado técnico e atenção
+                    personalizada
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="image-eletrica">
-          <img class="bola bola02" src="assets/img/bola02.png" alt="" />
-          <img class="celular" src="assets/img/celular.png" alt="" />
+          <!-- Imagem ilustrativa -->
+          <div class="image-eletrica">
+            <img class="bola bola02" src="assets/img/bola02.png" alt="" />
+            <img class="celular" src="assets/img/celular.png" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-
-    <section class="section-servicos">
-        
-        <div class="borda">
-            <div class="servicos">
-                <h1><img src="/assets/img/icons8-yellow-circle-48.png" alt="">Serviços</h1>
-                <h2>Seu atendimento é feito com zelo, empatia e <strong>total disponibilidade</strong></h2>
-                <h3>Na EletroNext escolhe como prefere se atendido.</h3>
-            </div>
-            <div class="blocos-servico">
-                <div>
-                    <div class="bloco">
-                        <img src="assets/img/servico-eletrico.png" alt="">
-                        <h4>Instalações Elétricas</h4>
-                    </div>
-                    <div class="bloco-explicacao">
-                        <p>Quando falamos sobre segurança elétrica e iluminação no contexto do trabalho de um eletricista, estamos entrando em um universo técnico, prático e altamente responsável.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bloco">
-                        <img src="assets/img/ideia.png" alt="">
-                        <h4>Iluminação</h4>
-                    </div>
-                    <div class="bloco-explicacao">
-                        <p>A iluminação é um dos pilares fundamentais das instalações elétricas, não apenas por sua função estética e de conforto, mas principalmente por sua relevância na segurança.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bloco">
-                        <img src="assets/img/capacete.png" alt="">
-                        <h4>Segurança Elétrica</h4>
-                    </div>
-                    <div class="bloco-explicacao">
-                        <p>Segurança Elétrica é um conjunto de medidas e práticas que têm como objetivo proteger pessoas, animais, equipamentos e instalações contra os riscos da eletricidade.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
-    <section class="sobre-mim">
-  <div class="div-mim">
-    <div class="foto-profissional">
-      <img id="foto-perfil" src="assets/img/foto-perfil3.jpg" alt="">
-      <div class="bloco-informacao">
-        <div class="text-box">
-          <img id="logo-perfil" src="assets/img/perfil.jpg" alt="">
-          <div class="text-box2">
-            <h2>Fernando EletroNext</h2>
-            <p>@eletroNext</p>
-          </div>
-        </div>
-        <img id="logo-info" src="assets/img/logo.png" alt="">
-      </div>
-    </div>
-
-    <div class="sobre-mim-explicacao">
-      <h1>
-        <img class="circle" src="/assets/img/icons8-yellow-circle-48.png" alt="">Sobre mim
-      </h1>
-
-      <div class="risco-wrapper">
-        <img class="risco-2" src="assets/img/risco.png" alt="">
-        <h2><strong class="risco-aqui">EletroNext</strong></h2>
-      </div>
-
-      <h3><strong>Eletricista técnico, especialista em instalações, manutenção elétrica e segurança elétrica</strong></h3>
-      <h4>Unindo excelência técnica e atenção humana, meu trabalho vai além de resolver problemas: ele garante segurança, tranquilidade e durabilidade. Uso métodos convencionais com soluções modernas, sempre pensando no que é melhor para você e para o seu espaço.</h4> 
-      <h4>Essa combinação gera confiança, fidelização e histórias reais de satisfação.</h4>
-
-      <ul>
-        <li class="bloco-formacao">
-          <img src="assets/img/Estrela.svg" alt="">
-          <p>20 anos atuando com serviços elétricos</p>
-        </li>
-        <li class="bloco-formacao">
-          <img src="assets/img/Estrela.svg" alt="">
-          <p>Certificação em Instalações Elétricas e NR-10</p>
-        </li>
-        <li class="bloco-formacao">
-          <img src="assets/img/Estrela.svg" alt="">
-          <p>Instrutor de cursos de formação em eletricidade e segurança</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+    <!-- Seção de serviços oferecidos -->
     <section class="section-servicos">
-    <div class="servicos">
-      <h1><img src="/assets/img/icons8-yellow-circle-48.png" alt=""> Depoimentos</h1>
-      <h2>O que dizem os nossos clientes<br>sobre <strong>nossos serviços</strong></h2>
-    </div>
-
-    <div class="bloco-comentarios">
-      <!-- Comentário 1 -->
-      <div class="box-comentario">
-        <div class="titulo-comentario">
-          <div class="box-titulo">
-            <h1>José Ferreira</h1>
-            <div class="campo-avaliacao">
-              <div class="box-avaliacao">
-                <img src="assets/img/Estrela.svg" alt="">
-                <p>5,0</p>
-              </div>
-              <p>Avaliação do Google</p>
+      <div class="borda ">
+        <div class="servicos headline">
+          <h1>
+            <img src="/assets/img/icons8-yellow-circle-48.png" alt="" />Serviços
+          </h1>
+          <h2>
+            Seu atendimento é feito com zelo, empatia e
+            <strong>total disponibilidade</strong>
+          </h2>
+          <h3>Na EletroNext escolhe como prefere se atendido.</h3>
+        </div>
+        
+        <!-- Cards de serviços -->
+        <div class="blocos-servico headline">
+          <div>
+            <div class="bloco">
+              <img src="assets/img/servico-eletrico.png" alt="" />
+              <h4>Instalações Elétricas</h4>
+            </div>
+            <div class="bloco-explicacao">
+              <p>
+                Quando falamos sobre segurança elétrica e iluminação no contexto
+                do trabalho de um eletricista, estamos entrando em um universo
+                técnico, prático e altamente responsável.
+              </p>
             </div>
           </div>
-          <div class="link-comentario">
-            <img src="assets/img/icons8-link-96.png" alt="">
-          </div>
-        </div>
-        <div class="comentario-text">
-          <p>Muito atencioso, profissionalismo, explicando claramente o diagnóstico e procedimentos, me atendendo muito bem e prontamente aos meus questionamentos.</p>
-        </div>
-      </div>
-
-      <!-- Comentário 2 -->
-      <div class="box-comentario">
-        <!-- Repita o conteúdo conforme necessário -->
-        <div class="titulo-comentario">
-          <div class="box-titulo">
-            <h1>Ana Souza</h1>
-            <div class="campo-avaliacao">
-              <div class="box-avaliacao">
-                <img src="assets/img/Estrela.svg" alt="">
-                <p>4,8</p>
-              </div>
-              <p>Avaliação do Google</p>
+          <div>
+            <div class="bloco">
+              <img src="assets/img/ideia.png" alt="" />
+              <h4>Iluminação</h4>
+            </div>
+            <div class="bloco-explicacao">
+              <p>
+                A iluminação é um dos pilares fundamentais das instalações
+                elétricas, não apenas por sua função estética e de conforto, mas
+                principalmente por sua relevância na segurança.
+              </p>
             </div>
           </div>
-          <div class="link-comentario">
-            <img src="assets/img/icons8-link-96.png" alt="">
-          </div>
-        </div>
-        <div class="comentario-text">
-          <p>Excelente atendimento, muito profissional e humano. Recomendo fortemente!</p>
-        </div>
-      </div>
-
-      <!-- Comentário 3 -->
-      <div class="box-comentario">
-        <div class="titulo-comentario">
-          <div class="box-titulo">
-            <h1>Marcos Lima</h1>
-            <div class="campo-avaliacao">
-              <div class="box-avaliacao">
-                <img src="assets/img/Estrela.svg" alt="">
-                <p>5,0</p>
-              </div>
-              <p>Avaliação do Google</p>
+          <div>
+            <div class="bloco">
+              <img src="assets/img/capacete.png" alt="" />
+              <h4>Segurança Elétrica</h4>
+            </div>
+            <div class="bloco-explicacao">
+              <p>
+                Segurança Elétrica é um conjunto de medidas e práticas que têm
+                como objetivo proteger pessoas, animais, equipamentos e
+                instalações contra os riscos da eletricidade.
+              </p>
             </div>
           </div>
-          <div class="link-comentario">
-            <img src="assets/img/icons8-link-96.png" alt="">
-          </div>
-        </div>
-        <div class="comentario-text">
-          <p>Serviço impecável, rápido e com muita atenção aos detalhes. Voltarei com certeza.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Comentário 4 -->
-      <div class="box-comentario">
-        <div class="titulo-comentario">
-          <div class="box-titulo">
-            <h1>Fernanda Costa</h1>
-            <div class="campo-avaliacao">
-              <div class="box-avaliacao">
-                <img src="assets/img/Estrela.svg" alt="">
-                <p>4,9</p>
+    <!-- Seção sobre o profissional -->
+    <section class="sobre-mim">
+      <div class="div-mim" id="sobre-mim headline">
+        <div class="foto-profissional headline">
+          <img id="foto-perfil" src="assets/img/foto-perfil3.jpg" alt="" />
+          <div class="bloco-informacao">
+            <div class="text-box">
+              <img id="logo-perfil" src="assets/img/perfil.jpg" alt="" />
+              <div class="text-box2">
+                <h2>Fernando EletroNext</h2>
+                <p>@eletroNext</p>
               </div>
-              <p>Avaliação do Google</p>
+            </div>
+            <img id="logo-info" src="assets/img/logo.png" alt="" />
+          </div>
+        </div>
+
+        <div class="sobre-mim-explicacao headline">
+          <h1>
+            <img
+              class="circle"
+              src="/assets/img/icons8-yellow-circle-48.png"
+              alt=""
+            />Sobre mim
+          </h1>
+
+          <div class="risco-wrapper">
+            <img class="risco-2" src="assets/img/risco.png" alt="" />
+            <h2><strong class="risco-aqui">EletroNext</strong></h2>
+          </div>
+
+          <h3>
+            <strong
+              >Eletricista técnico, especialista em instalações, manutenção
+              elétrica e segurança elétrica</strong
+            >
+          </h3>
+          <h4>
+            Unindo excelência técnica e atenção humana, meu trabalho vai além de
+            resolver problemas: ele garante segurança, tranquilidade e
+            durabilidade. Uso métodos convencionais com soluções modernas,
+            sempre pensando no que é melhor para você e para o seu espaço.
+          </h4>
+          <h4>
+            Essa combinação gera confiança, fidelização e histórias reais de
+            satisfação.
+          </h4>
+
+          <!-- Lista de qualificações -->
+          <ul>
+            <li class="bloco-formacao">
+              <img src="assets/img/Estrela.svg" alt="" />
+              <p>20 anos atuando com serviços elétricos</p>
+            </li>
+            <li class="bloco-formacao">
+              <img src="assets/img/Estrela.svg" alt="" />
+              <p>Certificação em Instalações Elétricas e NR-10</p>
+            </li>
+            <li class="bloco-formacao">
+              <img src="assets/img/Estrela.svg" alt="" />
+              <p>Instrutor de cursos de formação em eletricidade e segurança</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de depoimentos -->
+    <section class="section-servicos" id="depoimentos">
+      <div class="servicos headline">
+        <h1>
+          <img src="/assets/img/icons8-yellow-circle-48.png" alt="" />
+          Depoimentos
+        </h1>
+        <h2>
+          O que dizem os nossos clientes<br />sobre
+          <strong>nossos serviços</strong>
+        </h2>
+      </div>
+
+      <!-- Container de depoimentos -->
+      <div class="bloco-comentarios headline">
+        <!-- Comentário 1 -->
+        <div class="box-comentario">
+          <div class="titulo-comentario">
+            <div class="box-titulo">
+              <h1>José Ferreira</h1>
+              <div class="campo-avaliacao">
+                <div class="box-avaliacao">
+                  <img src="assets/img/Estrela.svg" alt="" />
+                  <p>5,0</p>
+                </div>
+                <p>Avaliação do Google</p>
+              </div>
+            </div>
+            <div class="link-comentario">
+              <img src="assets/img/icons8-link-96.png" alt="" />
             </div>
           </div>
-          <div class="link-comentario">
-            <img src="assets/img/icons8-link-96.png" alt="">
+          <div class="comentario-text">
+            <p>
+              Muito atencioso, profissionalismo, explicando claramente o
+              diagnóstico e procedimentos, me atendendo muito bem e prontamente
+              aos meus questionamentos.
+            </p>
           </div>
         </div>
-        <div class="comentario-text">
-          <p>Atendimento excelente, ambiente agradável e profissionais muito competentes.</p>
-        </div>
-      </div>
 
-      <!-- Comentário 5 -->
-      <div class="box-comentario">
-        <div class="titulo-comentario">
-          <div class="box-titulo">
-            <h1>Lucas Martins</h1>
-            <div class="campo-avaliacao">
-              <div class="box-avaliacao">
-                <img src="assets/img/Estrela.svg" alt="">
-                <p>5,0</p>
+        <!-- Comentário 2 -->
+        <div class="box-comentario">
+          <div class="titulo-comentario">
+            <div class="box-titulo">
+              <h1>Ana Souza</h1>
+              <div class="campo-avaliacao">
+                <div class="box-avaliacao">
+                  <img src="assets/img/Estrela.svg" alt="" />
+                  <p>4,8</p>
+                </div>
+                <p>Avaliação do Google</p>
               </div>
-              <p>Avaliação do Google</p>
+            </div>
+            <div class="link-comentario">
+              <img src="assets/img/icons8-link-96.png" alt="" />
             </div>
           </div>
-          <div class="link-comentario">
-            <img src="assets/img/icons8-link-96.png" alt="">
+          <div class="comentario-text">
+            <p>
+              Excelente atendimento, muito profissional e humano. Recomendo
+              fortemente!
+            </p>
           </div>
         </div>
-        <div class="comentario-text">
-          <p>Fui muito bem atendido, com explicações claras e atenção total às minhas dúvidas.</p>
-        </div>
-      </div>
 
-      <!-- Comentário 6 -->
-      <div class="box-comentario">
-        <div class="titulo-comentario">
-          <div class="box-titulo">
-            <h1>Patrícia Almeida</h1>
-            <div class="campo-avaliacao">
-              <div class="box-avaliacao">
-                <img src="assets/img/Estrela.svg" alt="">
-                <p>4,7</p>
+        <!-- Comentário 3 -->
+        <div class="box-comentario">
+          <div class="titulo-comentario">
+            <div class="box-titulo">
+              <h1>Marcos Lima</h1>
+              <div class="campo-avaliacao">
+                <div class="box-avaliacao">
+                  <img src="assets/img/Estrela.svg" alt="" />
+                  <p>5,0</p>
+                </div>
+                <p>Avaliação do Google</p>
               </div>
-              <p>Avaliação do Google</p>
+            </div>
+            <div class="link-comentario">
+              <img src="assets/img/icons8-link-96.png" alt="" />
             </div>
           </div>
-          <div class="link-comentario">
-            <img src="assets/img/icons8-link-96.png" alt="">
+          <div class="comentario-text">
+            <p>
+              Serviço impecável, rápido e com muita atenção aos detalhes.
+              Voltarei com certeza.
+            </p>
           </div>
         </div>
-        <div class="comentario-text">
-          <p>Ótimo serviço, equipe muito preparada e simpática. Recomendo!</p>
+
+        <!-- Comentário 4 -->
+        <div class="box-comentario">
+          <div class="titulo-comentario">
+            <div class="box-titulo">
+              <h1>Fernanda Costa</h1>
+              <div class="campo-avaliacao">
+                <div class="box-avaliacao">
+                  <img src="assets/img/Estrela.svg" alt="" />
+                  <p>4,9</p>
+                </div>
+                <p>Avaliação do Google</p>
+              </div>
+            </div>
+            <div class="link-comentario">
+              <img src="assets/img/icons8-link-96.png" alt="" />
+            </div>
+          </div>
+          <div class="comentario-text">
+            <p>
+              Atendimento excelente, ambiente agradável e profissionais muito
+              competentes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Comentário 5 -->
+        <div class="box-comentario">
+          <div class="titulo-comentario">
+            <div class="box-titulo">
+              <h1>Lucas Martins</h1>
+              <div class="campo-avaliacao">
+                <div class="box-avaliacao">
+                  <img src="assets/img/Estrela.svg" alt="" />
+                  <p>5,0</p>
+                </div>
+                <p>Avaliação do Google</p>
+              </div>
+            </div>
+            <div class="link-comentario">
+              <img src="assets/img/icons8-link-96.png" alt="" />
+            </div>
+          </div>
+          <div class="comentario-text">
+            <p>
+              Fui muito bem atendido, com explicações claras e atenção total às
+              minhas dúvidas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Comentário 6 -->
+        <div class="box-comentario">
+          <div class="titulo-comentario">
+            <div class="box-titulo">
+              <h1>Patrícia Almeida</h1>
+              <div class="campo-avaliacao">
+                <div class="box-avaliacao">
+                  <img src="assets/img/Estrela.svg" alt="" />
+                  <p>4,7</p>
+                </div>
+                <p>Avaliação do Google</p>
+              </div>
+            </div>
+            <div class="link-comentario">
+              <img src="assets/img/icons8-link-96.png" alt="" />
+            </div>
+          </div>
+          <div class="comentario-text">
+            <p>Ótimo serviço, equipe muito preparada e simpática. Recomendo!</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="servicos-eletricos">
-    
-    <div class="servico-eletrico-div">
-
+    <!-- Seção de detalhamento dos serviços elétricos -->
+    <section class="servicos-eletricos">
+      <div class="servico-eletrico-div headline">
         <div class="img-servico">
-            <img src="assets/img/579-×-654.png" alt="">
-
+          <img src="assets/img/579-×-654.png" alt="" />
         </div>
 
         <div class="servico-explicacao">
-            <h1> <img class="circle" src="assets/img/icons8-yellow-circle-48.png" alt="">Serviços Elétricos</h1>
-            <h2>O primeiro passo para garantir <strong>segurança</strong> e <strong>eficiência elétrica</strong> na sua casa ou empresa é conversar com quem entende.
-                Problemas como curto-circuito, sobrecarga, quedas de energia ou instalações antigas exigem um <strong>olhar técnico, atento e responsável</strong>.Aqui, o atendimento vai além da execução: oferecemos uma abordagem completa voltada para:</h2>
+          <h1>
+            <img
+              class="circle"
+              src="assets/img/icons8-yellow-circle-48.png"
+              alt=""
+            />Serviços Elétricos
+          </h1>
+          <h2>
+            O primeiro passo para garantir <strong>segurança</strong> e
+            <strong>eficiência elétrica</strong> na sua casa ou empresa é
+            conversar com quem entende. Problemas como curto-circuito,
+            sobrecarga, quedas de energia ou instalações antigas exigem um
+            <strong>olhar técnico, atento e responsável</strong>.Aqui, o
+            atendimento vai além da execução: oferecemos uma abordagem completa
+            voltada para:
+          </h2>
 
-                <ul>
-                    <li>&#x2022; Instalações elétricas residenciais e comerciais</li>
-                    <li>&#x2022; Manutenção preventiva e corretiva</li>
-                    <li>&#x2022; Projetos elétricos personalizados</li>
-                </ul>
-                <h2>Com a <strong >EletroNext</strong>, você terá orientações claras e seguras em todas as etapas do serviço — do diagnóstico à finalização.<br>
-                Compromisso com excelência, transparência e atenção a cada detalhe.</h2>
-
+          <!-- Lista de serviços -->
+          <ul>
+            <li>&#x2022; Instalações elétricas residenciais e comerciais</li>
+            <li>&#x2022; Manutenção preventiva e corretiva</li>
+            <li>&#x2022; Projetos elétricos personalizados</li>
+          </ul>
+          <h2>
+            Com a <strong>EletroNext</strong>, você terá orientações claras e
+            seguras em todas as etapas do serviço — do diagnóstico à
+            finalização.<br />
+            Compromisso com excelência, transparência e atenção a cada detalhe.
+          </h2>
         </div>
+      </div>
+    </section>
+
+    <!-- Seção final de call-to-action -->
+    <section class="section-atendimento">
+      <div class="div-atendimento headline">
+        <h1>
+          ⚡ O tipo de serviço que <strong>poucos oferecem</strong>. <br />
+          A segurança que <strong>sua casa precisa</strong>.
+        </h1>
+        <h2>
+          Este não é um serviço de eletricista comum. É uma experiência onde
+          técnica, responsabilidade e atenção se unem para garantir segurança,
+          eficiência e tranquilidade.
+        </h2>
+        <div class="div-foto-final">
+          <img id="img-final" src="assets/img/fundo-final.png" alt="" />
+        </div>
+        <h2>
+          Agende com o EletroNext e descubra o que é uma experiência de serviço
+          completa.
+        </h2>
         
-
-    </div>
-
-  </section>
-
-
-  <section class="section-atendimento">
-
-    <div class="div-atendimento">
-        <h1>⚡ O tipo de serviço que <strong>poucos oferecem</strong>. <br> A segurança que <strong>sua casa precisa</strong>.</h1>
-        <h2>Este não é um serviço de eletricista comum. É uma experiência onde técnica, responsabilidade e atenção se unem para garantir segurança, eficiência e tranquilidade.</h2>
-        <div class="div-foto-final"><img id="img-final" src="assets/img/fundo-final.png" alt=""></div>
-        <h2>Agende com o EletroNext e descubra o que é uma experiência de serviço completa.</h2>
+        <!-- Botão de chamada para ação final -->
         <button class="button-88" role="button">
-            Agende uma visita
-            <i class="fa fa-whatsapp" style="font-size: 36px"></i>
-          </button>
-        
+          Agende uma visita
+          <i class="fa fa-whatsapp" style="font-size: 36px"></i>
+        </button>
+      </div>
+    </section>
 
-    </div>
-
-  </section>
-
-  <section class="sessao-assinatura">
-
-    <div class="div-assinatura">
+    <!-- Seção de assinatura/rodapé -->
+    <section class="sessao-assinatura">
+      <div class="div-assinatura">
         <div class="assinatura-logo">
-            <img src="assets/img/logo.png" alt="">
-            <h1>EletroNext</h1>
-
+          <img src="assets/img/logo.png" alt="" />
+          <h1>EletroNext</h1>
         </div>
 
         <div class="div-direitos">
-            <h1>Copyright © 2025 EletroNext. <br><strong>Todos os direitos reservados.</strong></h1>
-
+          <h1>
+            Copyright © 2025 EletroNext. <br /><strong
+              >Todos os direitos reservados.</strong
+            >
+          </h1>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- Footer com créditos do desenvolvedor -->
+    <footer class="footer">
+      <h1>Desenvolvido por Origami.Web.Art</h1>
+    </footer>
 
-
-  </section>
-
-  <footer class="footer">
-    <h1>Desenvolvido por Origami.Web.Art</h1>
-
-  </footer>
-
-    
-  <script src="/assets/js/script.js"></script>
-
+    <!-- Script JavaScript -->
+    <script src="/assets/js/script.js"></script>
+    <script>
+		ScrollReveal().reveal('.headline')
+		ScrollReveal().reveal('.tagline', { delay: 500 })
+		ScrollReveal().reveal('.punchline', { delay: 2000 })
+	</script>
+</body>
   </body>
 </html>

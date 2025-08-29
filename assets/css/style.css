@@ -1,3 +1,4 @@
+/* ===== RESET E CONFIGURAÇÕES GERAIS ===== */
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +10,24 @@
   text-decoration: none;
 }
 
+#btn-mobile {
+    display: none;
+}
+
+/* ===== SEÇÃO PRINCIPAL/INTRO ===== */
 .section-intro {
   height: 100vh;
   background: url(/assets/img/fundo-eletricista.jpg);
   background-size: cover;
 }
 
-#logo img {
+/* ===== LOGO ===== */
+.logo {
   width: 70px;
 }
 
-#logo h1 {
+#logo a {
+  display: flex;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -27,6 +35,7 @@
   margin-bottom: 5px;
   font-weight: normal;
   color: aliceblue;
+  align-items: center;
 }
 
 #logo {
@@ -34,7 +43,7 @@
   align-items: center;
 }
 
-/*header*/
+/* ===== HEADER/MENU DE NAVEGAÇÃO ===== */
 .menu {
   display: flex;
   align-items: center;
@@ -45,27 +54,33 @@
   font-size: 16px;
 }
 
+.menu a {
+    color: aliceblue;
+}
+
 .menu-nav ul {
   display: flex;
 }
 
 .menu-nav ul li {
-  margin-left: 20px;
+  margin-left: 30px;
   color: rgb(237, 237, 237);
   transition: color 0.5s ease;
   text-decoration: none;
 }
 
-.menu-nav ul li:hover {
+.menu a:hover {
   color: #ffbb01;
+  transition: color 0.5s ease;
 }
 
-/*main*/
+/* ===== CONTEÚDO PRINCIPAL ===== */
 main {
   display: flex;
   margin: 0 auto;
   width: 80%;
 }
+
 .frase-wrapper {
   position: relative;
   display: inline-block;
@@ -122,7 +137,7 @@ strong {
   font-weight: 600;
 }
 
-/*button*/
+/* ===== BOTÕES ===== */
 .button-87 {
   padding: 15px 30px;
   text-align: center;
@@ -158,14 +173,12 @@ strong {
 
 .button-87:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
   transform: scale(1.05);
 }
 
-/*google*/
-
+/* ===== SEÇÃO DE AVALIAÇÕES GOOGLE ===== */
 .google-stars {
   display: flex;
   align-items: center;
@@ -192,12 +205,12 @@ strong {
   font-weight: 600;
 }
 
-/*section-two*/
-
+/* ===== SEGUNDA SEÇÃO (FUNDO AZUL) ===== */
 .fundo-two {
   background-color: #01509b;
   padding-bottom: 100px;
 }
+
 .section-two {
   margin: 0 auto;
   width: 80%;
@@ -208,29 +221,33 @@ strong {
   border-radius: 30px;
   padding: 50px;
   align-items: center;
-  
 }
+
 .servicos-prestados {
   display: flex;
   padding-bottom: 20px;
   width: 80%;
 }
+
 .servicos-prestados p {
   font-size: 20px;
   display: flex;
   align-items: center;
 }
+
 .servicos-prestados strong {
   color: #ffbb01;
   font-size: 70px;
   padding-right: 10px;
 }
+
 .main-text-2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.2;
   width: 80%;
 }
+
 .main-text-3 {
   font-size: 20px;
   font-weight: 300;
@@ -238,69 +255,89 @@ strong {
   letter-spacing: 1px;
   margin-top: 20px;
 }
+
 .area {
   display: flex;
   align-items: flex-start;
   margin-top: 30px;
   flex-direction: column;
 }
+
 .area-icones {
   display: flex;
   align-items: center;
   margin-top: 2%;
 }
+
 .text-icon {
   font-size: 15px;
   font-weight: 300;
 }
+
 .icon-text {
   font-size: 20px;
   font-weight: 500;
 }
+
 .icon-eletricista {
   margin-right: 10px;
 }
+
+/* ===== ANIMAÇÕES E ELEMENTOS FLUTUANTES ===== */
 .image-eletrica img {
   width: 300px;
 }
+
 .image-eletrica .esfera-flutua img {
   width: 150px;
 }
+
 .image-eletrica {
   position: relative;
   width: 300px; /* ajuste conforme o tamanho da imagem */
   margin: 0 auto;
 }
+
 .celular {
   width: 100%;
   display: block;
 }
+
 .bola {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   animation: flutuar 3s ease-in-out infinite;
-} /* Bola 01 - acima da imagem */
+}
+
+/* Bola 01 - acima da imagem */
 .bola01 {
   top: -20px;
   animation-delay: 0s;
   left: 240px;
-} /* Bola 02 - centro da imagem */
+}
+
+/* Bola 02 - centro da imagem */
 .bola02 {
   top: 70%;
   transform: translate(-50%, -50%);
   animation-delay: 1s;
   left: 240px;
-} /* Bola 03 - abaixo da imagem */
+}
+
+/* Bola 03 - abaixo da imagem */
 .bola03 {
   bottom: 70px;
   left: -80px;
   animation-delay: 2s;
 }
+
 .image-eletrica .bola {
   width: 130px;
-} /* Animação flutuante */
+}
+
+/* Animação flutuante */
 @keyframes flutuar {
   0% {
     transform: translateY(0);
@@ -313,13 +350,10 @@ strong {
   }
 }
 
-/*Serviços*/
-
+/* ===== SEÇÃO DE SERVIÇOS ===== */
 .section-servicos {
   background-color: #01509b;
   color: aliceblue;
-
-  
 }
 
 .servicos h2 strong {
@@ -332,6 +366,7 @@ strong {
   text-align: center;
   padding-top: 150px;
 }
+
 .servicos h1 {
   display: flex;
   align-items: center;
@@ -400,13 +435,10 @@ strong {
   width: 30px;
 }
 
-/*sobre mim*/
-
-/* sobre mim */
+/* ===== SEÇÃO SOBRE MIM ===== */
 .sobre-mim {
   background-color: #01509b;
   padding-top: 50px;
-  
 }
 
 .div-mim {
@@ -540,10 +572,8 @@ strong {
   width: 90%;
 }
 
-/*depoimentos*/
-
+/* ===== SEÇÃO DE DEPOIMENTOS ===== */
 .borda {
-  
   border-radius: 30px;
   border: 2px solid aliceblue;
   width: 80%;
@@ -621,8 +651,7 @@ strong {
   padding-bottom: 50px;
 }
 
-/*Serviços Elétricos*/
-
+/* ===== SEÇÃO SERVIÇOS ELÉTRICOS ===== */
 .servicos-eletricos {
   background-color: #01509b;
   padding-top: 50px;
@@ -642,6 +671,7 @@ strong {
   align-items: center;
   gap: 60px;
 }
+
 .circle {
   width: 20px;
 }
@@ -678,8 +708,7 @@ strong {
   border-radius: 50px;
 }
 
-/*atendimento*/
-
+/* ===== SEÇÃO DE ATENDIMENTO (CALL TO ACTION) ===== */
 .section-atendimento {
   background-color: #01509b;
   border-color: 1px red solid;
@@ -768,14 +797,12 @@ strong {
 
 .button-88:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
   transform: scale(1.05);
 }
 
-/*assinatura*/
-
+/* ===== SEÇÃO DE ASSINATURA ===== */
 .sessao-assinatura {
   background-color: #01509b;
   padding-bottom: 50px;
@@ -818,8 +845,7 @@ strong {
   text-align: right;
 }
 
-/*footer*/
-
+/* ===== FOOTER ===== */
 .footer {
   background-image: linear-gradient(
     45deg,

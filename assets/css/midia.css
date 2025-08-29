@@ -1,12 +1,452 @@
-/*imagem-introdução*/
-@media (max-width: 1450px) {
+/* ===== MEDIA QUERIES PARA TABLET (768px - 1060px) ===== */
+@media (max-width: 1060px) {
+  /* Menu Hamburguer - Mantendo seu código original */
+  #btn-mobile {
+     display: block;
+  }
+
+  #menu {
+     display: block;
+     position: absolute;
+     width: 100%;
+     top:70px;
+     left: 0px;
+     background-color:#002D64;
+     border-radius: 0px  20px 0px 0px;
+     height: 0px;
+     transition: .6s;
+     z-index: 1000;
+     visibility: hidden;
+     overflow-y: hidden;
+  }
+
+  #nav.active #menu{
+     height: 100vh;
+     visibility: visible;
+     overflow-y: auto;
+  }
+  
+  header ul li {
+     margin-left: 20px;
+     font-weight: 500;
+     margin-top: 30px;
+     padding-bottom: 30px;
+     width: 90%;
+     border-bottom: 2px solid rgba(245, 245, 245, 0.05);
+  }
+
+  #btn-mobile{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding:  .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before{
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  
+  /* Ajustes gerais para tablet */
+  .menu {
+    width: 90%;
+  }
+  
+  main {
+    width: 90%;
+  }
+  
+  .main-text {
+    width: 70vw;
+  }
+  
+  .main-text h2 {
+    font-size: 32px;
+    width: 90%;
+  }
+  
+  .main-text h3 {
+    width: 85%;
+    font-size: 18px;
+  }
+  
+  /* Seção dois */
+  .section-two {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 30px;
+  }
+  
+  .servicos-prestados {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .main-text-2, .main-text-3 {
+    width: 100%;
+  }
+  
+  .main-text-2 {
+    font-size: 32px;
+  }
+  
+  .main-text-3 {
+    font-size: 18px;
+  }
+  
+  .area {
+    align-items: center;
+  }
+  
+  /* Serviços */
+  .servicos {
+    width: 90%;
+    padding-top: 100px;
+  }
+  
+  .blocos-servico {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 100px;
+  }
+  
+  .bloco, .bloco-explicacao {
+    width: 300px;
+  }
+  
+  /* Sobre mim */
+  .div-mim {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .sobre-mim-explicacao {
+    max-width: 100%;
+  }
+  
+  .risco-2 {
+    top: -80px;
+    width: 230px;
+  }
+  
+  /* Depoimentos */
+  .borda {
+    width: 90%;
+  }
+  
+  .bloco-comentarios {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+  
+  .box-comentario {
+    width: 100%;
+  }
+  
+  /* Serviços elétricos */
+  .servico-eletrico-div {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 30px;
+  }
+  
+  .img-servico img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Atendimento */
+  .div-atendimento {
+    width: 90%;
+    padding: 40px 30px;
+  }
+  
+  .div-atendimento h2 {
+    width: 90%;
+  }
+  
+  /* Assinatura */
+  .div-assinatura {
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .div-direitos h1 {
+    text-align: center;
+  }
+}
+
+/* ===== MEDIA QUERIES PARA CELULAR (até 767px) ===== */
+@media (max-width: 767px) {
+  /* Ajustes de imagem de introdução - Mantendo seu código original */
   .section-intro {
     background: url(/assets/img/fundo-eletricista-menor.jpg);
     height: 100vh;
     background-size: cover;
   }
+  
+  /* Conteúdo principal */
+  main {
+    width: 95%;
+    flex-direction: column;
+  }
+  
+  .main-text {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .main-text h2 {
+    font-size: 28px;
+    width: 100%;
+  }
+  
+  .main-text h3 {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .div-livre {
+    display: none;
+  }
+  
+  .frase-wrapper {
+    display: block;
+  }
+  
+  .risco {
+    bottom: -90px;
+    width: 220px;
+  }
+  
+  .button-87 {
+    margin: 0 auto;
+    width: 250px;
+    font-size: 16px;
+  }
+  
+  .google {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Seção dois */
+  .section-two {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  
+  .servicos-prestados {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .servicos-prestados strong {
+    font-size: 50px;
+  }
+  
+  .main-text-2 {
+    font-size: 28px;
+  }
+  
+  .main-text-3 {
+    font-size: 16px;
+  }
+  
+  .area-icones {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .image-eletrica {
+    width: 250px;
+  }
+  
+  .bola02 {
+    left: 200px;
+  }
+  
+  /* Serviços */
+  .servicos {
+    width: 95%;
+    padding-top: 80px;
+  }
+  
+  .servicos h2 {
+    font-size: 28px;
+  }
+  
+  .servicos h3 {
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  
+  .blocos-servico {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  
+  .bloco, .bloco-explicacao {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  
+  
+  /* Sobre mim */
+  .div-mim {
+    width: 95%;
+    gap: 40px;
+  }
+  
+  #foto-perfil {
+    width: 100%;
+    max-width: 350px;
+  }
+  .bloco-explicacao p  {
+    font-size: 15px;
+  }
+  
+  .bloco-informacao {
+    width: 95%;
+    right: 10px;
+  }
+  .image-eletrica .bola {
+    width: 80px;
 }
-/*imagem-introdução e texto*/
+
+
+  .image-eletrica {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+  
+  .risco-2 {
+    top: -80px;
+    width: 250px;
+  }
+  
+  .sobre-mim-explicacao h3, 
+  .sobre-mim-explicacao h4 {
+    font-size: 16px;
+  }
+  
+  .bloco-formacao {
+    width: 100%;
+  }
+  
+  /* Depoimentos - Mantendo e expandindo seu código original */
+  .borda {
+    width: 95%;
+  }
+  
+  .bloco-comentarios {
+    width: 95%;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .box-comentario {
+    padding: 20px;
+  }
+  
+  /* Serviços elétricos */
+  .servico-eletrico-div {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  
+  .servico-explicacao h2 {
+    font-size: 16px;
+  }
+  
+  /* Atendimento */
+  .div-atendimento {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  
+  .div-atendimento h1 {
+    font-size: 28px;
+  }
+  
+  .div-atendimento h2 {
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .button-88 {
+    width: 250px;
+    font-size: 16px;
+  }
+  
+  /* Assinatura */
+  .div-assinatura {
+    width: 95%;
+  }
+  
+  .assinatura-logo h1 {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+}
+
+/* ===== AJUSTES ADICIONAIS PARA TELAS PEQUENAS ===== */
+@media (max-width: 1450px) {
+  .bloco-comentarios {
+    grid-template-columns: auto auto;
+  }
+}
+
 @media (max-width: 1400px) {
   .section-intro {
     background: url(/assets/img/fundo-eletricista-menor-2.jpg);
@@ -15,7 +455,6 @@
   }
 }
 
-/*imagem-introdução e texto*/
 @media (max-width: 1255px) {
   .section-intro {
     background-image: url(/assets/img/fundo-eletricista-menor-3.jpg);
@@ -24,47 +463,116 @@
   .main-text h2 {
     font-size: 32px;
   }
+  
   .main-text h3 {
     font-size: 16px;
   }
 }
 
-/*imagem-introdução e texto*/
-@media (max-width: 1155px) {
+@media (max-width: 1300px) {
   .section-intro {
     background-image: url(/assets/img/fundo.jpg);
   }
+
   .main-text {
-    width: 100vw;
+    align-items: center;
+  }
+
+  .google{
+    justify-content: center
+
+  }
+
+  .google-stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center
+}
+
+
+  .main-text {
+    width: 100%;
     text-align: center;
     margin: 0 auto;
-    gap: 50;
+    gap: 50px;
   }
+  
   .main-text h1 {
     width: 100%;
   }
+  
   .main-text h2,
   .main-text h3 {
     width: 100%;
   }
+  
   .div-livre {
     width: 0;
   }
-}
 
+  .section-two {
+    gap: 100px;
+    flex-direction: column;
+    text-align: center;
 
-/*comenatarios*/
-@media (max-width: 1500px) {
-  .bloco-comentarios {
-    grid-template-columns: auto auto;
   }
-  
+
 }
 
 @media (max-width: 1000px) {
   .bloco-comentarios {
-   
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
+  }
+}
+
+/* ===== AJUSTES ESPECÍFICOS PARA TELAS MUITO PEQUENAS (até 380px) ===== */
+@media (max-width: 380px) {
+  #logo a {
+    font-size: 10px;
+    letter-spacing: 3px;
   }
   
+  .main-text h2 {
+    font-size: 24px;
+  }
+  
+  .main-text h3 {
+    font-size: 14px;
+  }
+  
+  .servicos-prestados strong {
+    font-size: 40px;
+  }
+  
+  .main-text-2 {
+    font-size: 24px;
+  }
+  
+  .servicos h2 {
+    font-size: 24px;
+  }
+  
+  .div-atendimento h1 {
+    font-size: 24px;
+  }
+  
+  .button-87, .button-88 {
+    width: 220px;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  
+  .google {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .bloco-comentarios {
+    padding: 15px;
+  }
+  
+  .box-comentario {
+    padding: 15px;
+  }
 }
